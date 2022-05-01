@@ -1,8 +1,14 @@
 public class TrafficLights {
 
     public static String updateLight(String current) {
-
-        return "";
+        switch (current) {
+            case "green":
+                return "yellow";
+            case "yellow":
+                return "red";
+            case "red":
+                return "green";
+            default: return "not a light";
+        }
     }
-
 }
